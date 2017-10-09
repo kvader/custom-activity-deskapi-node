@@ -1,5 +1,5 @@
 # Journey Builder
-## Custom Activities - Desk.com API
+## Custom Activities - Desk.com API - Sara
 
 This nodejs app is a Journey Builder Application Extension containing two custom activities.  Create Case creates an email case using Desk.com's API in response to a JB interaction trigger being fired.  Update Case is to be placed after Create Case within an interaction and will update the subject and priority of the newly created case.
 
