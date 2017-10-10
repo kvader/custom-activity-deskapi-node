@@ -15,7 +15,7 @@
     "arguments": {
         "execute": {     	
 			"inArguments":[	
-				{ "caseID":"{{Interaction.c8ea87fe-28b3-4e6b-bd0c-bd0ae9178b61.caseID}}" }
+				{ "caseID":"{{Interaction.934ade70-83e4-4aca-88b7-04332f06828d.caseID}}" }
 			],        	
             "outArguments": [				
 			],
