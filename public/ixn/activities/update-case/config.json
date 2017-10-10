@@ -23,7 +23,6 @@
             "method": "POST",
             "body": "",
             "headers": "",
-
             "useJwt": false,
             "timeout": 10000
         }
