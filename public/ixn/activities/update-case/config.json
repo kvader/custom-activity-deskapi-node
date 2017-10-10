@@ -15,7 +15,7 @@
     "arguments": {
         "execute": {     	
 			"inArguments":[	
-				{ "caseID":"{{Interaction.c4fc00ad-789f-4e9d-9ba1-6d9743e83b3c.caseID}}" }
+				{ "caseID":"{{Interaction.bbb286a5-9899-422a-9a8e-d31accd66217.caseID}}" }
 			],        	
             "outArguments": [				
 			],
@@ -48,6 +48,22 @@
             "verb": "POST",
             "body": "",
             "useJwt": false            
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [
+                    {
+                        "myInArgument": {
+                            "dataType": "Text",
+                            "isNullable": false,
+                            "direction": "In"
+                        }
+                    }
+                ],
+                "outArguments": []
+            }
         }
     },
     "edit": {

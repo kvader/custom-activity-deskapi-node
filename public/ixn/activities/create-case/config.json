@@ -53,6 +53,22 @@
       "useJwt": false
     }
   },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "outArguments": [
+          {
+            "key": {
+              "dataType": "Text",
+              "isNullable": false,
+              "access": "Visible",
+              "direction": "Out"
+            }
+          }
+        ]
+      }
+    }
+  },
   "edit": {
     "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/create-case/",
     "height": 400,
