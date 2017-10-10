@@ -15,15 +15,15 @@
     "arguments": {
         "execute": {     	
 			"inArguments":[	
-				{ "caseID":"{{Interaction.sr-activity-desk-create-case.caseID}}" }
+				{ "caseID":"{{Interaction.8adada07-72b1-4b0d-9d7f-1dc971381262.caseID}}" }
 			],        	
             "outArguments": [				
 			],
 			"url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/update-case/execute/",
-            "verb": "POST",
+            "method": "POST",
             "body": "",
-            "header": "",
-            "format": "json",
+            "headers": "",
+
             "useJwt": false,
             "timeout": 10000
         }
