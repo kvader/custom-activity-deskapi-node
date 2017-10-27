@@ -116,7 +116,7 @@ function initCase(req,res) {
 function findCustIdByEmail(email, next) {
     console.log('findCustIdByEmail', email);
     var post_data = JSON.stringify({
-        "name":"findCustIdByEmail"
+        "name": email
     });
     var options = {
         'hostname':'kvader-developer-edition.na24.force.com'
@@ -223,7 +223,7 @@ function createCustomer(data, next) {
 function createCase(custId, email, priority, next) {
     console.log('createCase', custId);
     var post_data = JSON.stringify({
-        "name":"createCase"
+        "nameCreateCase": email
     });
     var options = {
         'hostname':'kvader-developer-edition.na24.force.com'
