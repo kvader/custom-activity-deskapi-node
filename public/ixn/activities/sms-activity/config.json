@@ -68,7 +68,7 @@
     }
   },
   "edit": {
-    "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/create-case/",
+    "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/",
     "height": 400,
     "width": 500
   }
