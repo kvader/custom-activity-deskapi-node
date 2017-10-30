@@ -20,7 +20,7 @@
       "outArguments": [
         { "result":"" }
       ],
-      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/execute/",
+      "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/execute/",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -33,19 +33,19 @@
     "applicationExtensionKey": "sr-activity-desk-create-case",
     "defaults": { "priority": "4"},
     "save": {
-      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/save/",
+      "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/save/",
       "body": "",
       "verb": "POST",
       "useJwt": false
     },
     "publish": {
-      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/publish/",
+      "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/publish/",
       "verb": "POST",
       "body": "",
       "useJwt": false
     },
     "validate": {
-      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/validate/",
+      "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/validate/",
       "verb": "POST",
       "body": "",
       "useJwt": false
@@ -68,7 +68,7 @@
     }
   },
   "edit": {
-    "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/",
+    "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/",
     "height": 400,
     "width": 500
   }
