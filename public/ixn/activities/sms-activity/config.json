@@ -1,0 +1,75 @@
+{
+  "workflowApiVersion": "1.0",
+  "metaData": {
+    "version": "2.0",
+    "icon": "images/jb-icon.jpg",
+    "iconSmall": "images/jb-icon.jpg"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Enviar SMS",
+      "description": "Enviar Mensaje de SMS a través de TIBCO"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments":[
+        { "emailAddress": "{{Contact.Default.Email}}"}
+      ],
+      "outArguments": [
+        { "result":"" }
+      ],
+      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/execute/",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "sr-activity-desk-create-case",
+    "defaults": { "priority": "4"},
+    "save": {
+      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/save/",
+      "body": "",
+      "verb": "POST",
+      "useJwt": false
+    },
+    "publish": {
+      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/publish/",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "validate": {
+      "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/sms-activity/validate/",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "outArguments": [
+          {
+            "key": {
+              "dataType": "Text",
+              "isNullable": false,
+              "access": "Visible",
+              "direction": "Out"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "edit": {
+    "url": "https://app-baz-deskapi.herokuapp.com/ixn/activities/create-case/",
+    "height": 400,
+    "width": 500
+  }
+}
