@@ -10,6 +10,8 @@ var routes      = require('./routes');
 var activityCreate   = require('./routes/activityCreate');
 var activityUpdate   = require('./routes/activityUpdate');
 var activityUtils    = require('./routes/activityUtils');
+//Actividad de envío de SMS
+var smsActivity = require('./routes/activitySMS');
 var pkgjson = require( './package.json' );
 
 var app = express();
@@ -82,6 +84,11 @@ app.post('/ixn/activities/update-case/save/', activityUpdate.save );
 app.post('/ixn/activities/update-case/validate/', activityUpdate.validate );
 app.post('/ixn/activities/update-case/publish/', activityUpdate.publish );
 app.post('/ixn/activities/update-case/execute/', activityUpdate.execute );
+//Actividades de envío de SMS
+app.post('/ixn/activities/update-case/sms-activity/save',smsActivity.save);
+app.post('/ixn/activities/update-case/sms-activity/validate',smsActivity.validate);
+app.post('/ixn/activities/update-case/sms-activity/publish',smsActivity.publish);
+app.post('/ixn/activities/update-case/sms-activity/execute',smsActivity.execute);
 
 app.get('/clearList', function( req, res ) {
 	// The client makes this request to get the data
