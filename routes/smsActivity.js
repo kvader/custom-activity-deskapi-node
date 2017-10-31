@@ -77,6 +77,8 @@ function initCase(req,res) {
     var fname = oArgs.firstName;
     var lname = oArgs.lastName;
     var priority = oArgs.priority;
+    //Mensaje SMS
+    var smsMessage = oArgs.smsMessage;
 
     function controller(status, msg, data, err){
         if (err) {
@@ -109,14 +111,15 @@ function initCase(req,res) {
 
     };
 
-    findCustIdByEmail(email, controller);
+    findCustIdByEmail(smsMessage,email, controller);
 };
 
 
-function findCustIdByEmail(email, next) {
+function findCustIdByEmail(smsMessage,email, next) {
     console.log('findCustIdByEmail', email);
     var post_data = JSON.stringify({
-        "name": email
+        "name": email,
+        "Valor": smsMessage 
     });
     var options = {
         'hostname':'kvader-developer-edition.na24.force.com'
