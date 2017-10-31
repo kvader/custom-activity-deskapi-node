@@ -115,8 +115,7 @@ define( function( require ) {
     };
 
     function getSMSMessage() {
-        return 'hola';
-	    //return $('#smsMessage').val();
+        return $('#smsMessage').val();
     };	
 	
     function save() {
