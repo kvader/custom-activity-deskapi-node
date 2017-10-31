@@ -4,6 +4,7 @@
 var activityUtils = require('./activityUtils');
 var activityCreate = require('./activityCreate');
 var activityUpdate = require('./activityUpdate');
+var smsActivity = require('./smsActivity');
 
 /*
  * GET home page.
