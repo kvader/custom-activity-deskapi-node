@@ -7,13 +7,13 @@ requirejs.config({
         'vendor/jquery.min': {
             exports: '$'
         },
-		'CreateCase': {
+		'smsActivity': {
 			deps: ['vendor/jquery.min', 'vendor/postmonger']
 		}
     }
 });
 
-requirejs( ['vendor/jquery.min', 'CreateCase'], function( $, CreateCase ) {
+requirejs( ['vendor/jquery.min', 'smsActivity'], function( $, smsActivity ) {
 	//console.log( 'REQUIRE LOADED' );
 });
 
