@@ -11,7 +11,7 @@ var activityCreate   = require('./routes/activityCreate');
 var activityUpdate   = require('./routes/activityUpdate');
 var activityUtils    = require('./routes/activityUtils');
 //Actividad de envío de SMS
-var smsActivity = require('./routes/activitySMS');
+var smsActivity = require('./routes/smsActivity');
 var pkgjson = require( './package.json' );
 
 var app = express();
