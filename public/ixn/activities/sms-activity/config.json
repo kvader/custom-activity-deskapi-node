@@ -30,7 +30,7 @@
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "sr-activity-desk-create-case",
+    "applicationExtensionKey": "marketingtestavx",
     "defaults": { "priority": "4"},
     "save": {
       "url": "https://marketingtestavx.herokuapp.com/ixn/activities/sms-activity/save/",
