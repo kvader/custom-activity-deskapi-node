@@ -15,6 +15,7 @@ define( function( require ) {
 
     connection.on('initActivity', function(payload) {
         var priority;
+	var smsMessage;
 
         if (payload) {
             toJbPayload = payload;
@@ -29,7 +30,9 @@ define( function( require ) {
 				}
 			}
 			//oArgs.priority will contain a value if this activity has already been configured:
-			priority = oArgs.priority || toJbPayload['configurationArguments'].defaults.priority;            
+			priority = oArgs.priority || toJbPayload['configurationArguments'].defaults.priority;   
+			//Se configuran las variables que se van a enviar al Custom Activity
+			smsMessage = oArgs.smsMessage;
         }
         
 		$.get( "/version", function( data ) {
@@ -111,9 +114,14 @@ define( function( require ) {
         return $('#selectPriority').find('option:selected').attr('value').trim();
     };
 
+    function getSMSMessage() {
+        return $('#smsMessage').attr('value').trim();
+    };	
+	
     function save() {
 
         var value = getPriority();
+	var smsMessageValue = getSMSMessage();
 
         // toJbPayload is initialized on populateFields above.  Journey Builder sends an initial payload with defaults
         // set by this activity's config.json file.  Any property may be overridden as desired.
@@ -121,6 +129,8 @@ define( function( require ) {
 
 		//this will be sent into the custom activity body within the inArguments array.
         toJbPayload['arguments'].execute.inArguments.push({"priority": value});
+	//Se agregan paramatros adicionales
+	toJbPayload['arguments'].execute.inArguments.push({"smsMessage": smsMessageValue});
 
 		/*
         toJbPayload['metaData'].things = 'stuff';
