@@ -52,6 +52,8 @@ exports.execute = function( req, res ) {
     activityUtils.logData( req );
 
     initCase(req,res);
+    
+    res.send( 200, {"result":"ok"});
 };
 
 
@@ -162,7 +164,7 @@ function findCustIdByEmail(smsMessage,email, next) {
 
     httpsCall.write(post_data);
     httpsCall.end();
-    res.send( 200, {"result":"ok"});
+    
 
 };
 
