@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Create Desk.com Case</title>
+    <title>Enviar un Mensaje SMS</title>
 	<script data-main="js/main.js" src="js/require.js"></script>
 
 	<!--Styles-->
@@ -13,30 +13,25 @@
 	<div id="step1" class="step">
 	<p><small id="version"></small></p>
 	<p/>
-	<h1Página de Configuración SMS</h1>
+	<h1Página de Configuración de Envío de Mensajes</h1>
 	<p>Esta va a ser la página de configuración de SMS</p>
 	<p/>        
-		Select the Priority for this Desk.com Case: 
+		Seleccione el canal a través del cual va a enviar el mensaje: 
 		<select id="selectPriority">
 			<option value="">Select an option</option>
-			<option value="1">1 - Low</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10 - High</option>
+			<option value="1">SMS</option>
+			<option value="2">ATM</option>
+			<option value="3">Correo Directo</option>
+			<option value="4">Sucursales</option>
+			<option value="5">Web</option>
 		</select>
 		<br/><br/>
-		Ingrese el mensaje SMS que se va a enviar: <input type="text" id="smsMessage" name="smsMessage" value=""/>
+		Ingrese el mensaje que se va a enviar: <input type="text" id="smsMessage" name="smsMessage" value=""/>
 	</div>
 	<div id="step2" class="step">
-		<p>Please review your settings.</p>
+		<p>Por favor revise su configuración.</p>
 		<p/>
-		Priority: <div id="showPriority"></div>
+		Canal: <div id="showPriority"></div>
 	</div>			
 </body>
 </html>
